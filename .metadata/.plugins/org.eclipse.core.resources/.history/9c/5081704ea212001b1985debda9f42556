@@ -1,0 +1,13 @@
+package practiceformbegining;
+
+public class Floats {
+
+	public static void main(String...strings) {
+		
+		
+		float num = 10.5f;
+		
+		System.out.println(num/0);
+		System.out.println(Float.NaN);
+	}
+}

@@ -1,0 +1,50 @@
+package regularexpression;
+
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileReader;
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.util.Scanner;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
+public class R6FilePhoneEmail {
+
+	public static void main(String[] args) throws IOException {
+
+		Scanner sc = new Scanner(System.in);
+		
+		File file = new File("c:\\Desktop\\regDemo");
+		if(!file.exists()) {
+			file.mkdirs();
+			System.out.println("Hello");
+		}
+		
+		FileReader reader = new FileReader("input.txt");
+		BufferedReader in = new BufferedReader(reader);
+		
+//		FileWriter writer = new FileWriter("output.txt");
+//		BufferedWriter out = new BufferedWriter(writer);
+	
+		PrintWriter out = new PrintWriter("output.txt");
+		out.println("Phone Numbers : ");
+		
+		Pattern p = Pattern.compile("(91|0)?[7-9][0-9]{9}");
+		
+		String line = in.readLine();
+		
+		while(line!=null) {
+			Matcher m = p.matcher(line);
+			while(m.find()) {
+				out.println(m.group());
+			}
+		}
+	}
+
+}
+
+
+
+
+

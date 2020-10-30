@@ -1,0 +1,21 @@
+package regularexpression;
+
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
+public class R2Basic2 {
+
+	public static void main(String[] args) {
+
+		Pattern p = Pattern.compile("\\w");
+		Matcher m = p.matcher("1rn16e c105$");
+		
+		while(m.find()) {
+			
+			System.out.println(m.start() + "..." + m.end() + "..." + m.group());
+			
+		}
+		
+	}
+
+}

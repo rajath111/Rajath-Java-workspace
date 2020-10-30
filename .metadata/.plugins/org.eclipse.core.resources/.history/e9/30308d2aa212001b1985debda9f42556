@@ -1,0 +1,12 @@
+package practiceformbegining;
+
+public class Floats {
+
+	public static void main(String...strings) {
+		
+		
+		float num = 10.5;
+		
+		System.out.println(num/0);
+	}
+}

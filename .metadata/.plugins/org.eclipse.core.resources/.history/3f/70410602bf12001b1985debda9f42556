@@ -1,0 +1,23 @@
+package regularexpression;
+
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
+public class R1Basic {
+	
+	public static void main(String...strings) {
+		
+		int count = 0;
+		
+		Pattern p = Pattern.compile("ab");
+		Matcher m = p.matcher("ababbabaa");
+		
+		while(m.find()) {
+			System.out.println(m.start() + "..." + m.end());
+			count++;
+		}
+		System.out.println("The count is : " + count);
+		
+	}
+
+}

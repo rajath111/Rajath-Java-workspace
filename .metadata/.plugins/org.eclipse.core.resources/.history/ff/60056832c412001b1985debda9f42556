@@ -1,0 +1,19 @@
+package regularexpression;
+
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
+public class R4Split {
+	
+	public static void main(String...strings) {
+		
+		Pattern p = Pattern.compile(" ");
+		String[] str = p.split("Rajath is Indian");
+		
+		for(String s:str) {
+			System.out.println(s);
+		}
+		
+	}
+
+}

@@ -1,0 +1,30 @@
+package regularexpression;
+
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.PrintWriter;
+import java.util.Scanner;
+
+public class R5File {
+
+	public static void main(String[] args) throws FileNotFoundException {
+
+		Scanner sc = new Scanner(System.in);
+		
+		File file = new File("c:\\Desktop\\regDemo");
+		if(!file.exists()) {
+			file.mkdirs();
+		}
+		
+		PrintWriter out = new PrintWriter("c:\\Desktop\\regDemo\\input.txt");
+		
+		
+		System.out.println("Enter your details");
+		String details = sc.nextLine();
+		out.println(details);
+		
+		out.flush();
+		out.close();
+	}
+
+}

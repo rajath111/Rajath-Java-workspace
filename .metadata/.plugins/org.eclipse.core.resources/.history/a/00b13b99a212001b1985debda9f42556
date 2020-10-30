@@ -1,0 +1,18 @@
+package practiceformbegining;
+
+public class Floats {
+
+	public static void main(String...strings) {
+		
+		
+		float num = 10.5f;
+		float result = num/0;
+		
+		System.out.println(num/0);
+		System.out.println(0.0/0);
+		System.out.println(0.0/0.0);
+		System.out.println(Float.NaN);
+		System.out.println(Float.NaN != Float.NaN);
+		System.out.println(result);
+	}
+}
