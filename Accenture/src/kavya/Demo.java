@@ -198,7 +198,7 @@ public class Demo {
 			System.out.println("\nWanna try again??\n"
 					+ ">>>Type 'yes' or any string to continue\n"
 					+ ">>>Type 'no' to exit");
-			String option = sc.nextLine().toLowerCase().strip();
+			String option = sc.nextLine().toLowerCase().trim();
 			if(option.equals("no")) {
 				sc.close();
 				System.out.println("Thanks for using our application!");

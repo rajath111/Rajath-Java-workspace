@@ -4,7 +4,7 @@ import java.util.Scanner;
 public class Main{
     public static int n;
     public static void main (String[] args) {
-        Scanner sc=new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
         System.out.println("Enter the number of products:");
         n=sc.nextInt();
         
@@ -68,6 +68,7 @@ public class Main{
         System.out.println(onnum[i]);
         i++;
         }
+        sc.close();
         
     }
 }
